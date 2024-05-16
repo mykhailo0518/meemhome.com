@@ -17,9 +17,9 @@
         <section id="home__category" class="mt-5 w-100 row">
             @foreach ($parentCategories as $parentCategory)
                 
-            <div class="col d-flex flex-column justify-content-center align-items-center">
+            <div class="home__category-box col d-flex flex-column justify-content-center align-items-center">
                 <img class="w-100" src="{{ $parentCategory->cover_image_url}}"/>
-                <h3 class="text-nowrap pt-3 home__category-title">{{$parentCategory-> name}}</h3>
+                <h3 class="home__category-title text-nowrap">{{$parentCategory-> name}}</h3>
             </div>
             @endforeach
         </section>
