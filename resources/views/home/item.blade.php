@@ -123,7 +123,7 @@
                     </div>
                 @endif
 
-                <div class="mb-3">
+                {{-- <div class="mb-3">
                     <a href="{{ $item->image_download }}"
                         class="btn btn-primary w-100 d-flex align-items-center justify-content-center py-2"
                         download="{{ $item->name }}-{{ $item->code ?? 'proton' }}.jpg">
@@ -134,7 +134,7 @@
                         </svg>
                         Download Image
                     </a>
-                </div>
+                </div> --}}
                 <div>
                     Category: <a href="{{ $item->category->url }}" class=" link-primary">{{ $item->category->name }}</a>
                 </div>
