@@ -98,8 +98,8 @@
         </div>
     </div>
 
-    <div class="g-recaptcha" data-sitekey="6LdLm0QmAAAAALokfVhN0r5HpamqTo8bnxQlTxPM" data-size="invisible">
-    </div>
+    {{-- <div class="g-recaptcha" data-sitekey="6LdLm0QmAAAAALokfVhN0r5HpamqTo8bnxQlTxPM" data-size="invisible">
+    </div> --}}
 </body>
 
 </html>
