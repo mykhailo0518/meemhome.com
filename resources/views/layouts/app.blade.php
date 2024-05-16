@@ -40,6 +40,7 @@
     @include('seotools.json-ld')
     <link rel="preload" href="{{ mix('css/app.css') }}" as="style" />
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/common.css')}}" />
     @stack('style')
     @stack('head')
 </head>

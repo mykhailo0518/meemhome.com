@@ -1,10 +1,7 @@
-<div class="d-flex justify-content-center bg-white  align-items-center py-3 d-block d-md-none">
-    <a href="{{ route('home') }}" class="fw-bold text-decoration-none h3">
-        <img src="{{ asset('images/webp/proton-new-logo.png') }}"  alt="{{ config('app.name') }}">
-    </a>
-</div>
 <nav class="navbar navbar-expand-lg navbar-dark shadow-sm bg-white" id="mainNavbar" style="z-index: 1025;">
     <div class="container">
+
+
         <a class="navbar-brand d-none d-md-block fw-bold" href="{{ route('home') }}">
             <img src="{{ asset('images/webp/proton-new-logo.png') }}" alt="{{ config('app.name') }}"
                 id="navbarBrandImage">
@@ -13,6 +10,13 @@
             href="#offcanvasCatalog" role="button" aria-controls="offcanvasCatalog">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <div class="d-flex justify-content-center bg-white  align-items-center py-3 d-block d-md-none">
+            <a href="{{ route('home') }}" class="fw-bold text-decoration-none h3">
+                <img src="{{ asset('images/webp/proton-new-logo.png') }}"  alt="{{ config('app.name') }}">
+            </a>
+        </div>
+
         <div class="d-flex align-items-center">
             <a class="nav-link ps-3 d-block d-md-none" href="{{ route('cart') }}">
                 <div class="position-relative">
