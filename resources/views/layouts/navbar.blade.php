@@ -3,7 +3,7 @@
 
 
         <a class="navbar-brand d-none d-md-block fw-bold" href="{{ route('home') }}">
-            <img src="{{ asset('images/webp/proton-new-logo.png') }}" alt="{{ config('app.name') }}"
+            <img src="{{ asset('images/webp/meemhome-logo.webp') }}" alt="{{ config('app.name') }}"
                 id="navbarBrandImage">
         </a>
         <button class="navbar-toggler ms-md-auto px-0" type="button" data-bs-toggle="offcanvas"
@@ -13,7 +13,7 @@
 
         <div class="d-flex justify-content-center bg-white  align-items-center py-3 d-block d-md-none">
             <a href="{{ route('home') }}" class="fw-bold text-decoration-none h3">
-                <img src="{{ asset('images/webp/proton-new-logo.png') }}"  alt="{{ config('app.name') }}">
+                <img src="{{ asset('images/webp/meemhome-logo.webp') }}"  alt="{{ config('app.name') }}">
             </a>
         </div>
 
@@ -221,7 +221,7 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCatalog" aria-labelledby="offcanvasCatalogLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasCatalogLabel">
-            <img src="{{ asset('images/webp/proton-new-logo.png') }}" 
+            <img src="{{ asset('images/webp/meemhome-logo.webp') }}" 
                 alt="{{ config('app.name') }}">
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
