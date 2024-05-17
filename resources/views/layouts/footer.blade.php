@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-6 col-lg-4 ps-lg-5 mb-4 mb-md-0">
                 <a href="{{ route('home') }}">
-                    <img src="{{ asset('images/webp/proton-new-logo.jpg') }}" height="100" alt="{{ config('app.name') }}"
+                    <img src="{{ asset('images/webp/meemhome-logo.webp') }}" height="100" alt="{{ config('app.name') }}"
                         class="mb-2">
                 </a>
                 {{-- <div class="mb-4 text-muted">
