@@ -18,7 +18,9 @@
             @foreach ($parentCategories as $parentCategory)
                 
             <div class="home__category-box col d-flex flex-column justify-content-center align-items-center">
-                <img class="w-100" src="{{ $parentCategory->cover_image_url}}"/>
+                <a href="{{ $parentCategory->url }}" class="text-decoration-none text-body">
+                    <img class="w-100" src="{{ $parentCategory->image_url}}"/>
+                </a>
                 <h3 class="home__category-title text-nowrap">{{$parentCategory-> name}}</h3>
             </div>
             @endforeach

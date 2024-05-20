@@ -35,7 +35,7 @@
             <div class="owl-carousel mb-3 owl-loaded owl-drag">
                 <div class="owl-stage-outer">
                     <div class="owl-stage d-flex justify-content-center"
-                        style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1307px;">
+                        style="margin:auto; transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1307px;">
                         @foreach ($category->subcategories as $subcategory)
                             <div class="owl-item active me-4" style="width: 176.667px; margin-right: 10px;">
                                 <a href="{{ $subcategory->url }}" class=" text-decoration-none text-body">
@@ -47,7 +47,6 @@
                                         </div>
                                         <p class="fw-bold text-uppercase"> {{ $subcategory->name }}</p>
                                     </div>
-
                                 </a>
                             </div>
                         @endforeach

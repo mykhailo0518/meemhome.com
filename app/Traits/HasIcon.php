@@ -34,8 +34,8 @@ trait HasIcon
      */
     public function getIconUrlAttribute(): string|null
     {
-        return $this->image_path
-            ? route('image.show', ['path' => $this->image_path, 'w' => 40, 'h' => 40, 'fit' => 'fill-max', 'bg' => 'white', 'fm' => 'webp'])
+        return $this->cover_image_pat
+            ? route('image.show', ['path' => $this->cover_image_pat, 'w' => 40, 'h' => 40, 'fit' => 'fill-max', 'bg' => 'white', 'fm' => 'webp'])
             : null;
     }
     /**
