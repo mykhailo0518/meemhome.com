@@ -4,3 +4,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.nav__icon {
+    padding: 5px !important;
+   
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__icon:hover {
+    background-color: #eee;
+}
