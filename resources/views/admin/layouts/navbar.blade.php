@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand bg-light shadow-sm border-bottom">
     <div class="container-fluid">
-        <a class="navbar-brand d-md-block d-none" href="{{ route('admin.dashboard') }}">  <img src="{{ asset('images/webp/logo.webp') }}" height="30" alt="{{ config('app.name') }}"></a>
+        <a class="navbar-brand d-md-block d-none" href="{{ route('admin.dashboard') }}">  
+            {{-- <img src="{{ asset('images/webp/logo.webp') }}" height="30" alt="{{ config('app.name') }}"> --}}
+            <h1 class="admin__nav-title">Meemhome</h1>
+        </a>
         <a class="navbar-brand d-block d-md-none" href="#">
             <button class="btn btn-link text-dark ps-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">

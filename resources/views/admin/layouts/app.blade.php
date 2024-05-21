@@ -21,7 +21,7 @@
     <link rel="preload" href="{{ mix('css/app-admin.css') }}" as="style" />
     <link rel="stylesheet" href="{{ mix('css/app-admin.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.1/slimselect.min.css" rel="stylesheet"></link>
-
+    <link rel="stylesheet" href="{{ asset('css/admin-common.css')}}" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     @stack('head')
