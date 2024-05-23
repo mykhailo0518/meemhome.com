@@ -19,6 +19,7 @@ mix
   .js('resources/js/util-script', 'public/js')
   .js('resources/js/splide.js', 'public/js')
   .js('resources/js/particles.js', 'public/js')
+  .js('resources/js/common.js', 'pulic/js')
   .sass("resources/sass/home.scss", "public/css")
   .sass('resources/sass/app.scss', 'public/css')
   .sass('resources/sass/app-admin.scss', 'public/css')

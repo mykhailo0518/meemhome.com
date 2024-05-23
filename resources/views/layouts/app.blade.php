@@ -106,5 +106,5 @@
 </html>
 <script src="{{ mix('js/app.js') }}"></script>
 <script src="{{ mix('js/particles.js') }}"></script>
-
+<script src="{{ mix('js/common.js')}}"></script>
 @stack('script')
