@@ -6,7 +6,7 @@
     <div class="row justify-content-center align-items-center py-3">
         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 border rounded-4 py-3">
             <div class=" text-uppercase fw-bold h3 mb-3 text-center">
-                <img src="{{ asset('images/webp/meemhome-logo.webp') }}" alt="{{ config('app.name') }}" class="w-100 py-3 px-5">
+                <img src="{{ asset('images/webp/meemhome-original.webp') }}" alt="{{ config('app.name') }}" class="w-100 py-3 px-5">
                 {{ $title ?? 'Login' }}
             </div>
 
