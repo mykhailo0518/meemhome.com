@@ -14,7 +14,7 @@
 @section('content')
 
     @if(!$parentCategories->isEmpty())
-        <section id="home__category" class="mt-5 w-100 row">
+        <section id="home__category" class="m-0 mt-5 w-100 row">
             @foreach ($parentCategories as $parentCategory)
                 
             <div class="home__category-box col d-flex flex-column justify-content-center align-items-center">
@@ -27,7 +27,7 @@
         </section>
     @endif
 
-    <section id="home__product-and-labels" class="mt-5 w-100 row">
+    <section id="home__product-and-labels" class="m-0 mt-5 w-100 row">
         <h2 class="product-and-labels__heading text-center pt-2 pb-2 ">Products and Labels to help you get Organised</h2>
         <div class="col-6 p-2 ">
             <img class="w-100 rounded-4 img-fluid" src="{{asset('images/posts/B1.png')}}" />
