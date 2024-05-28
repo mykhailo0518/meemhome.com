@@ -65,11 +65,11 @@ class ItemController extends Controller
         $item->code = $request->code;
         // $item->serial_number = $request->serial_number;
         // $item->warranty_period = $request->warranty_period ?? 0;
-        // $item->in_stock = $request->in_stock ?? 0;
+
         // $item->continue_selling_when_out_of_stock =  $request->has('continue_selling_when_out_of_stock');
         // $item->track_stock = $request->has('track_stock');
-
-        $item->in_stock = 0;
+        
+        $item->in_stock = $request->in_stock ?? 0;
         $item->continue_selling_when_out_of_stock =  true;
         $item->track_stock = false;
 
