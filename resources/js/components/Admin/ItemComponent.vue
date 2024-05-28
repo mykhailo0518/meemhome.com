@@ -1072,7 +1072,7 @@
             <div class="form-check mb-3">
               <input class="form-check-input" type="checkbox" v-model="editData.continue_selling_when_out_of_stock" id="continueSellingCheckboxEdit" />
               <label class="form-check-label" for="continueSellingCheckboxEdit"> Continue Selling when out of stock</label>
-            </div>
+            </div> -->
             <div class="mb-3">
               <label for="in_stock" class="form-label fw-bold"> In Stock (Available)</label>
               <input
@@ -1087,7 +1087,7 @@
               <div class="invalid-feedback" v-if="errors.hasOwnProperty('in_stock')">
                 {{ errors.in_stock[0] }}
               </div>
-            </div> -->
+            </div>
           </div>
 
           <div class="border rounded-4 p-3 mb-3 bg-white border-light shadow-sm">
@@ -1277,6 +1277,9 @@ export default {
   },
   mounted() {},
   methods: {
+    helloW(a) {
+      console.log(this.editData.in_stock)
+    },
     exportCSV() {
       this.$refs.dt.exportCSV();
     },
@@ -1398,6 +1401,7 @@ export default {
       topbar.show();
       this.loading = true;
       const formData = new FormData();
+      
       formData.append('image', this.editData.image);
       formData.append('data_sheet', this.editData.data_sheet);
       formData.append('name', this.editData.name);
@@ -1446,6 +1450,8 @@ export default {
           formData.append('additional_images[]', this.editData.additionalImages[index]);
         }
       }
+      console.log('updateItems::',JSON.parse(JSON.stringify(this.editData)))
+      console.log('formdata: ', formData)
       const config = { headers: { 'Content-Type': 'multipart/form-data' } };
       axios
         .post(`/admin/items/${id}`, formData, config)
@@ -1470,6 +1476,7 @@ export default {
         });
     },
     openEditModal(item) {
+      console.log('item:', item);
       this.errors = {};
       this.editData.id = item.id;
       this.editData.name = item.name;

@@ -1,11 +1,13 @@
 <template>
-  <div class="fw-bolder h2 pb-3 d-flex align-items-center border-bottom" v-if="item.base_price">
+  <div class="fw-bolder h2 pb-1 d-flex align-items-center " v-if="item.base_price">
     <span :class="item.has_discount ? 'text-danger' : ''"> {{ price }}</span>
     <s class="mx-2" v-if="item.has_discount">{{ item.view_original_price }}</s>
     <span v-if="item.has_discount" class="badge text-bg-danger user-select-none fs-5">Sale</span>
   </div>
-
-  <div class="row">
+  <div class="py-2 fs-3">
+    In Stock: {{ item.in_stock }}
+  </div>
+  <div class="row border-bottom border-top py-2">
     <div class="col-md-6 d-flex align-items-center mb-3 mb-md-0 justify-content-md-start justify-content-center">
       <div class="d-flex align-items-center">
         <div>
@@ -58,6 +60,7 @@ export default {
     addToCart() {
       try {
         ShoppingCart.add(this.item, this.quantity);
+        console.log("item:", this.item)
         this.$store.state.cartTotal = ShoppingCart.total();
         this.$store.state.cartTotalItems = ShoppingCart.totalItems();
         this.$toast.show('Added to your cart');

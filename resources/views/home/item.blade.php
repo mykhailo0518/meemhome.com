@@ -140,7 +140,7 @@
                 </div>
                 <div class="mb-2">
                     @if ($item->code)
-                        <div>Prodduct Code: {{ $item->code }}</div>
+                        <div>Product Code: {{ $item->code }}</div>
                     @endif
                     @if ($item->sku)
                         <div class="text-muted small">SKU: {{ $item->sku }}</div>
@@ -189,7 +189,7 @@
                     @endif
                 </div>
 
-                <section class="border-top py-3">
+                <section class="py-3">
                     <header class="h3 text-center mb-0 text-uppercase ff-montserrat">Share</header>
                     <div class="c-underline">&nbsp;</div>
 
