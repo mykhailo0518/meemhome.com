@@ -342,6 +342,7 @@ export default {
       this.loading = true;
       topbar.show();
       this.errors = {};
+
       axios
         .post('/api/v1/order', this.data)
         .then(response => {
